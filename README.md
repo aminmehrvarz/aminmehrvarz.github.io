@@ -1,6 +1,6 @@
 # aminmehrvarz.github.io
 
-# Ehs Noo — Academic Website
+# Amin Mehrvarz
 
 ## Introduction
 
