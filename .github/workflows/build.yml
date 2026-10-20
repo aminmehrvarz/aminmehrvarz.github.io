@@ -1,0 +1,91 @@
+name: Build website
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish to GitHub Pages after a successful build
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validation and portrait dependencies
+        run: python -m pip install PyYAML Pillow pillow-heif
+
+      - name: Prepare portrait
+        run: python3 scripts/prepare_portrait.py
+
+      - name: Require main branch for publishing
+        if: github.event_name == 'workflow_dispatch' && inputs.publish && github.ref != 'refs/heads/main'
+        run: |
+          echo "Publishing is only allowed from the main branch." >&2
+          exit 1
+
+      - name: Build with the locked project bundle
+        run: bundle exec jekyll build --trace
+
+      - name: Validate generated site
+        if: github.event_name != 'workflow_dispatch' || !inputs.publish
+        run: python3 scripts/validate.py --site _site
+
+      - name: Validate publication prerequisites
+        if: github.event_name == 'workflow_dispatch' && inputs.publish
+        run: python3 scripts/validate.py --publish --site _site
+
+      - name: Upload preview artifact
+        if: github.event_name != 'workflow_dispatch' || !inputs.publish
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-preview
+          path: _site
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Upload Pages artifact
+        if: github.event_name == 'workflow_dispatch' && inputs.publish
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

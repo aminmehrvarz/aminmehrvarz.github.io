@@ -72,10 +72,10 @@ This checkout already contains commits and an origin tracking branch. This task 
 2. For `USERNAME.github.io`, keep `baseurl: ""`. For a project repository, use `baseurl: "/REPOSITORY"` with no trailing slash. Configure a custom domain separately if wanted.
 3. Generate and inspect the JPEG portrait. Run the build and link validation above, then inspect desktop and mobile layouts in a browser. `python3 scripts/validate.py --publish` checks the portrait and origin prerequisites.
 4. When authorized, commit the reviewed files, connect the chosen GitHub remote, and push the working branch. This checkout already has an origin tracking branch; verify that its destination is the intended repository before pushing.
-5. Choose **Settings → Pages → Source → GitHub Actions** in that repository. The `Build website` workflow builds and uploads a preview artifact on pushes and pull requests; it does not deploy.
-6. When ready to publish, manually run **Publish GitHub Pages (manual)** on the intended branch and select its `publish` checkbox. The default is false; the workflow never deploys on a push.
+5. Choose **Settings → Pages → Source → GitHub Actions** in that repository. The `Build website` workflow installs the pinned dependencies from `Gemfile.lock`, builds with `bundle exec jekyll`, and uploads a preview artifact on pushes and pull requests. It does not use GitHub's restricted built-in Jekyll builder.
+6. When ready to publish, manually run **Build website** from `main` and select its `publish` checkbox. The default is false; the workflow never deploys on a push or pull request. Publishing also requires the confirmed production `url` and generated portrait to pass `python3 scripts/validate.py --publish`.
 
-The GitHub Pages workflows build Jekyll with the pinned custom gems; GitHub Pages' built-in restricted Jekyll builder is not used. No original-site deployment, Docker publishing, citation updates, scheduled jobs, or release workflows have been carried into this project.
+No original-site deployment, Docker publishing, citation updates, scheduled jobs, or release workflows have been carried into this project.
 
 ## Attribution
 
