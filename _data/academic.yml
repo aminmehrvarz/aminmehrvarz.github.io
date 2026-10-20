@@ -1,0 +1,94 @@
+# All facts originate in Amin Mehrvarz-CV.pdf; no external biography was used.
+education:
+  - degree: Ph.D. in Mechanical Engineering — Robotics/Mechatronics
+    institution: Northeastern University
+    location: Boston, MA, U.S.
+    dates: September 2017 – August 2021
+    gpa: 3.87/4
+    thesis_label: Dissertation
+    thesis: Theoretical and Experimental Analyses of Tunable Active Metamaterials via Use of Feed-forward/back Controllers
+  - degree: M.Sc. in Mechanical Engineering — Control
+    institution: Sharif University of Technology
+    location: Tehran, Iran
+    dates: September 2013 – September 2015
+    gpa: 3.82/4
+    thesis_label: Thesis
+    thesis: Positioning, tracking and vibrating boundary control in micro-beams with considering piezoelectric actuators effects
+  - degree: B.Sc. in Mechanical Engineering — Design and Manufacturing
+    institution: Sharif University of Technology
+    location: Tehran, Iran
+    dates: September 2008 – August 2013
+    gpa: 3.8/4
+    thesis_label: Thesis
+    thesis: Design and manufacture of a mold placement mechanism for a hydraulic press
+  - degree: Diploma in Mathematics and Physics
+    institution: Dehkhoda
+    location: Karaj, Alborz, Iran
+    dates: September 2004 – June 2008
+    gpa: 4/4
+experience:
+  - role: Senior Software Engineer–Developer, Surgical Robotics
+    organization: Medtronic
+    dates: September 2024 – Present
+    description: Control and kinematic software for surgical robotic instruments, trajectory generation, real-time inverse kinematics, and hardware-in-the-loop testing.
+  - role: Senior Software Engineer–Test Lead, Surgical Robotics
+    organization: Medtronic
+    dates: June 2023 – September 2024
+    description: Technical leadership in software verification, control algorithm testing, and integration of robotic manipulators and surgical instruments.
+  - role: Controls Verification Engineer, Surgical Robotics
+    organization: Medtronic
+    dates: January 2022 – June 2023
+    description: Software and hardware-in-the-loop testing, control model review, and verification methods for electromechanical medical systems.
+  - role: Graduate Research Assistant
+    organization: Northeastern University
+    dates: September 2017 – December 2021
+    description: Robotics, control systems, mechatronics, dynamic modeling, and tunable active metamaterials; coordinated the Piezoactive Systems Laboratory.
+  - role: Graduate Research Assistant
+    organization: Sharif University of Technology
+    dates: September 2013 – September 2015
+    description: Nonlinear, PDE-based, and adaptive control; fluid–structure interaction and vibration suppression.
+  - role: Intern
+    organization: Power Planet Repairs
+    dates: June 2013 – August 2013
+    description: Gas turbine modeling and simulation using CATIA, SolidWorks, and ANSYS.
+  - role: Intern
+    organization: Sharif University of Technology
+    dates: June 2011 – August 2011
+    description: Finite element software research and solenoid valve flow simulation.
+research_interests:
+  - Control Theory
+  - Robotics
+  - Mechatronics
+  - Machine Learning
+  - Multibody Dynamics
+  - Wave Propagation
+  - Vibrations
+  - Acoustics
+skills: [MATLAB, Python, C++, Simulink, Simscape, ROS2, COMSOL, Maple, ANSYS, SolidWorks, CATIA, AutoCAD]
+awards:
+  - Outstanding Teaching, College of Engineering, Northeastern University, 2021
+  - Outstanding Graduate Researcher, College of Engineering, Northeastern University, 2020
+  - Outstanding Reviewer, IOP Publishing, 2020
+  - Scholarship, Mechanical and Industrial Engineering Department, Northeastern University, 2017
+  - Ranked 14th out of 20,000 participants, nationwide M.Sc. entrance exam, 2013
+  - Ranked 196th out of 350,000 participants, nationwide B.Sc. entrance exam, 2008
+teaching:
+  - institution: Northeastern University
+    courses: [Advanced Dynamics, Advanced Vibration, Mechatronics, Measurement Laboratory]
+  - institution: Sharif University of Technology
+    courses: [Automatic Control, Dynamics of Machinery, Vibrations, Dynamics and Vibrations Laboratory, Mechanism Design]
+# CV contact information; only email and Boston are displayed on the website.
+contact:
+  email: amin.mehrvarz@gmail.com
+  phone: +1 (617) 758-9882
+  location: Boston, MA, U.S., 02210
+languages:
+  - language: Persian
+    proficiency: Native
+  - language: English
+    proficiency: Advanced
+  - language: Arabic
+    proficiency: Beginner
+memberships:
+  - American Society of Mechanical Engineers (ASME)
+  - International Federation of Automatic Control (IFAC)

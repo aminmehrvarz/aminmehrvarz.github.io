@@ -1,0 +1,40 @@
+# Concise summaries of the eight projects named in the supplied CV (pp. 5–6).
+- title: Control of Active Metamaterial
+  description: >-
+    Designed feed-forward and feedback controllers to modulate metamaterial stiffness
+    in space and time. Investigated wave propagation and nonreciprocity through
+    MATLAB/COMSOL simulations and experiments using piezoelectric sensors and
+    actuators, Simulink, and dSPACE.
+- title: Closed-Loop Control of Anesthesia
+  description: >-
+    Developed optimal and adaptive control approaches for anesthesia automation,
+    including an adaptive multi-critic neuro-fuzzy controller implemented and
+    trained in Python.
+- title: Moving Robot
+  description: >-
+    Compared PID and model predictive control for the stability of a flexible robot
+    using MATLAB. Developed a robotic gripper to detect different types of fish
+    using machine learning and Python.
+- title: Control of Active Baffles
+  description: >-
+    Investigated active control of fluid motion in a smart tank using finite element
+    analysis and MATLAB. Designed a robust nonlinear controller based on feedback
+    linearization and compared its performance with available alternatives.
+- title: Acoustic Wave Manipulation
+  description: >-
+    Developed an acoustic metasurface for phase modulation and investigated
+    broadband sound attenuation in air-permeable structures. Used MATLAB and
+    COMSOL to study and retrieve acoustic properties of metamaterials.
+- title: PDE Controllers for Atomic Force Microscopy (AFM)
+  description: >-
+    Compared partial differential equation control approaches for atomic force
+    microscopy using C++. Studied ordinary differential equation feedback and
+    Lyapunov-based boundary control for vibration suppression.
+- title: Control of Coronary Artery Model
+  description: >-
+    Studied chaos control and a sliding-mode model-reference adaptive controller
+    for a nonlinear coronary artery model using MATLAB and Simulink.
+- title: Fluid–Structure Vibrations
+  description: >-
+    Analyzed vibrations of micropolar membranes in contact with fluid using C++
+    and investigated rotor-shaft behavior under fluid forces using MATLAB.

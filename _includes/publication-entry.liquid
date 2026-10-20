@@ -1,0 +1,33 @@
+{% assign publication = include.publication %}
+<article class="publication-entry{% unless publication.thumbnail %} publication-entry-text{% endunless %}">
+  {% if publication.thumbnail %}
+    <img
+      class="publication-image publication-thumbnail"
+      src="{{ publication.thumbnail | relative_url }}"
+      alt="{{ publication.thumbnail_alt | default: publication.title | escape }}"
+      loading="lazy"
+    >
+  {% endif %}
+  <div class="publication-details">
+    {% if include.selected %}
+      <h3>{{ publication.title | escape }}</h3>
+    {% else %}
+      <h2>{{ publication.title | escape }}</h2>
+    {% endif %}
+    <p>{{ publication.authors | join: ', ' | escape }}</p>
+    <p>
+      {{ publication.venue | escape }}, {{ publication.year | escape -}}
+      {%- if publication.details %}. {{ publication.details | escape }}{% endif %}
+    </p>
+    {% if publication.paper_url or publication.doi %}
+      <p class="publication-links">
+        {% if publication.paper_url -%}
+          <a href="{{ publication.paper_url | escape }}">Paper</a>
+        {%- endif %}
+        {% if publication.doi -%}
+          <a href="https://doi.org/{{ publication.doi | escape }}">DOI</a>
+        {%- endif %}
+      </p>
+    {% endif %}
+  </div>
+</article>

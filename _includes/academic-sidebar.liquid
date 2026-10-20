@@ -1,0 +1,44 @@
+<h1 class="academic-name">
+  {{ site.first_name | escape }}
+  {{ site.last_name | escape }}
+</h1>
+{% assign portrait_path = site.data.profile.image | prepend: '/' %}
+{% assign portrait = site.static_files | where: 'path', portrait_path | first %}
+<figure class="academic-photo">
+  {% if portrait %}
+    <img
+      class="profile-photo"
+      src="{{ site.data.profile.image | prepend: '/' | relative_url }}"
+      alt="Portrait of {{ site.data.profile.name | escape }}"
+      width="800"
+      height="800"
+    >
+  {% else %}
+    <a href="{{ '/assets/img/amin-mehrvarz.heic' | relative_url }}">View Amin's profile photograph (HEIC)</a>
+  {% endif %}
+</figure>
+<p class="academic-position">{{ site.data.profile.position | escape }} · {{ site.data.profile.affiliation | escape }}</p>
+<nav class="contact-links" aria-label="Professional and contact links">
+  <div class="contact-row">
+    {% if site.data.socials.email -%}
+      <a href="mailto:{{ site.data.socials.email | escape }}">Email</a>
+    {%- endif %}
+    {% if site.data.profile.google_scholar -%}
+      <a href="{{ site.data.profile.google_scholar | escape }}">Google Scholar</a>
+    {%- endif %}
+    {% if site.data.profile.cv_pdf -%}
+      <a href="{{ site.data.profile.cv_pdf | prepend: '/' | relative_url }}">CV</a>
+    {%- endif %}
+  </div>
+  <div class="contact-row">
+    {% if site.data.socials.github_username -%}
+      <a href="https://github.com/{{ site.data.socials.github_username | escape }}">GitHub</a>
+    {%- endif %}
+    {% if site.data.profile.linkedin -%}
+      <a href="{{ site.data.profile.linkedin | escape }}">LinkedIn</a>
+    {%- endif %}
+    {% if site.data.profile.orcid -%}
+      <a href="{{ site.data.profile.orcid | escape }}">ORCID</a>
+    {%- endif %}
+  </div>
+</nav>

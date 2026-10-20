@@ -1,0 +1,93 @@
+# Transcribed from the supplied CV (pp. 4–5), including author order and years.
+# Do not infer missing DOIs or publisher URLs. arXiv URLs use IDs printed in the CV.
+# Optional thumbnail and thumbnail_alt may be added later; all images are currently unset.
+- title: Experimental demonstration of broadband reconfigurable mechanical nonreciprocity
+  authors: ["Mehrvarz, A.", "Khodaei, M. J.", "Darabi, A.", "Zareei, A.", "Jalili, N."]
+  venue: Journal of Vibration and Control
+  year: 2024
+  details: "30(1–2), 288–294"
+  selected: true
+- title: "Acoustic meta-silencer: Toward enabling ultrawide-band air-permeable noise barrier"
+  authors: ["Khodaei, M. J.", "Mehrvarz, A.", "Ghaffarivardavagh, R.", "Jalili, N."]
+  venue: Journal of Vibration and Control
+  year: 2022
+  details: "28(15–16), 1928–1936"
+  selected: true
+- title: Retrieving effective acoustic impedance and refractive index for size mismatch samples
+  authors: ["Khodaei, M. J.", "Mehrvarz, A.", "Ghaffarivardavagh, R.", "Jalili, N."]
+  venue: AIP Advances
+  year: 2022
+  details: "12(6)"
+- title: Band Gap and Stiffness Tuning of a Sandwich Plate by Magnetostrictive Materials
+  authors: ["Korivand, S.", "Mehrvarz, A.", "Candelino, N.", "Khodaei, M. J.", "Jalili, N."]
+  venue: ASME Letters in Dynamic Systems and Control
+  year: 2021
+  details: "1(4), 041007"
+- title: A new dynamic model of a two-wheeled two-flexible-beam inverted pendulum robot
+  authors: ["Mehrvarz, A.", "Khodaei, M. J.", "Clark, W.", "Jalili, N."]
+  venue: ASME International Mechanical Engineering Congress and Exposition
+  year: 2020
+  details: "November; Vol. 84553, V07BT07A044. American Society of Mechanical Engineers"
+- title: "Non-centric cavity-based acoustic metasurface: Enabling full phase modulation"
+  authors: ["Khodaei, M. J.", "Mehrvarz, A.", "Ghaffarivardavagh, R.", "Jalili, N."]
+  venue: AIP Advances
+  year: 2020
+  details: "10(9), 095020"
+- title: "Physiological closed-loop control (PCLC) systems: Review of a modern frontier in automation"
+  authors: ["Khodaei, M. J.", "Candelino, N.", "Mehrvarz, A.", "Jalili, N."]
+  venue: IEEE Access
+  year: 2020
+  details: "8, 23965–24005"
+- title: Parameter Sensitivity Analysis of Piezoelectrically-Actuated Flexural/Torsional Vibrating Beams
+  authors: ["Salehzadeh, R.", "Candelino, N.", "Khodaei, M. J.", "Mehrvarz, A.", "Jalili, N."]
+  venue: Dynamic Systems and Control Conference
+  year: 2020
+  details: "October; Vol. 84287, V002T38A008. American Society of Mechanical Engineers"
+- title: An Adaptive Neuro-fuzzy Strategy in Closed-loop Control of Anesthesia
+  authors: ["Khodaei, M. J.", "Inaloo, M. H. B.", "Mehrvarz, A.", "Jalili, N."]
+  venue: arXiv preprint
+  year: 2019
+  details: "arXiv:1910.06325"
+  paper_url: https://arxiv.org/abs/1910.06325
+- title: Vibration Analysis of a Micropolar Membrane in Contact with Fluid
+  authors: ["Ardekany, A. N.", "Daneshmand, F.", "Mehrvarz, A."]
+  venue: Iranian Journal of Science and Technology, Transactions of Mechanical Engineering
+  year: 2019
+  details: "43(1), 695–704"
+- title: Vibration analysis and control of fluid containers using piezoelectrically-excited side wall
+  authors: ["Mehrvarz, A.", "Najafi Ardekani, A.", "Khodaei, M. J.", "Jalili, N."]
+  venue: Journal of Vibration and Control
+  year: 2019
+  details: "25(7), 1393–1408"
+  selected: true
+- title: An adaptive multi-critic neuro-fuzzy control framework for intravenous anesthesia administration
+  authors: ["Khodaei, M. J.", "Mehrvarz, A.", "Jalili, N."]
+  venue: IFAC-PapersOnLine
+  year: 2019
+  details: "51(34), 202–207"
+- title: Boundary vibration control of strain gradient timoshenko micro-cantilevers using piezoelectric actuators
+  authors: ["Mehrvarz, A.", "Salarieh, H.", "Alasty, A.", "Vatankhah, R."]
+  venue: arXiv preprint
+  year: 2018
+  details: "arXiv:1812.01155"
+  paper_url: https://arxiv.org/abs/1812.01155
+- title: Theoretical and experimental analysis of coupled flexural-torsional vibrations of rotating beams
+  authors: ["Khodaei, M. J.", "Mehrvarz, A.", "Candelino, N.", "Jalili, N."]
+  venue: Dynamic Systems and Control Conference
+  year: 2018
+  details: "September; Vol. 51913, V003T42A004. American Society of Mechanical Engineers"
+- title: Modeling and dynamics analysis of a beam-hoverboard self-transportation system
+  authors: ["Mehrvarz, A.", "Khodaei, M. J.", "Clark, W.", "Jalili, N."]
+  venue: Dynamic Systems and Control Conference
+  year: 2018
+  details: "September; Vol. 51913, V003T32A008. American Society of Mechanical Engineers"
+- title: Vibration boundary control of Timoshenko micro-cantilever using piezoelectric actuators
+  authors: ["Mehrvarz, A.", "Salarieh, H.", "Alasty, A.", "Vatankhah, R."]
+  venue: Scientia Iranica
+  year: 2018
+  details: "25(2), 711–720"
+- title: Vibrations suppression of a Euler-Bernoulli beam in contact with a fluid using piezoelectric actuators
+  authors: ["Ardekany, A. N.", "Mehrvarz, A."]
+  venue: 2016 4th International Conference on Robotics and Mechatronics (ICROM)
+  year: 2016
+  details: "October; pp. 285–288. IEEE"
