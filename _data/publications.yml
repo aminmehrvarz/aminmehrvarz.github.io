@@ -12,7 +12,6 @@
   venue: Journal of Vibration and Control
   year: 2022
   details: "28(15–16), 1928–1936"
-  selected: true
 - title: Retrieving effective acoustic impedance and refractive index for size mismatch samples
   authors: ["Khodaei, M. J.", "Mehrvarz, A.", "Ghaffarivardavagh, R.", "Jalili, N."]
   venue: AIP Advances
@@ -65,6 +64,7 @@
   venue: IFAC-PapersOnLine
   year: 2019
   details: "51(34), 202–207"
+  selected: true
 - title: Boundary vibration control of strain gradient timoshenko micro-cantilevers using piezoelectric actuators
   authors: ["Mehrvarz, A.", "Salarieh, H.", "Alasty, A.", "Vatankhah, R."]
   venue: arXiv preprint
