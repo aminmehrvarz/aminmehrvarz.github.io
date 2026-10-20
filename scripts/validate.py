@@ -140,7 +140,7 @@ def main():
     public = ROOT / unquote(profile["cv_pdf"])
     assert original.read_bytes() == public.read_bytes(), "CV derivative changed"
     assert hashlib.sha256(original.read_bytes()).hexdigest() == (
-        "481fb2996232c7b1698c43564e60fb619b9a0cdf0d7be44fe298f1c0ea73d70a"
+        "f241425eaf065e0f71934fb7ab20e93c22dc5be6ea7420304fbdcd47dea8e3a0"
     )
     assert hashlib.sha256((ROOT / "IMG_9578.HEIC").read_bytes()).hexdigest() == (
         "4fcd5f921aeb4897b65c450aadd26412859c7c23e02063e184e8f10e3f5427c7"
