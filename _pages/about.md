@@ -14,7 +14,7 @@ social: false
 
 I am a Senior Software Engineer in Surgical Robotics at Medtronic in Boston. My work includes control algorithm and robotics, real-time inverse kinematics, and trajectory generation.
 
-I received my Ph.D. in Mechanical Engineering, with a focus on Robotics/Mechatronics, from Northeastern University in 2021. My dissertation studied tunable active metamaterials using feed-forward and feedback controllers. I earned my M.Sc. and B.Sc. in Mechanical Engineering from Sharif University of Technology.
+I received my Ph.D. in Mechanical Engineering, with a focus on Control systems and Robotics, from Northeastern University in 2021. My dissertation studied tunable active metamaterials using feed-forward and feedback controllers. I earned my M.Sc. and B.Sc. in Mechanical Engineering from Sharif University of Technology.
 
 My research interests include control theory, robotics, mechatronics, machine learning, multibody dynamics, wave propagation, vibrations, and acoustics.
 
@@ -32,7 +32,7 @@ My research interests include control theory, robotics, mechatronics, machine le
 ## Education
 
 {% for education in site.data.academic.education %}
-- **{{ education.degree | escape }}**, {{ education.institution | escape }} ({{ education.dates | escape }}).{% if education.thesis %} {{ education.thesis_label | escape }}: {{ education.thesis | escape }}{% endif %}
+- **{{ education.degree | escape }}**, {{ education.institution | escape }} ({{ education.dates | escape }}).{% if education.thesis %}<br>{{ education.thesis_label | escape }}: {{ education.thesis | escape }}{% endif %}
 {% endfor %}
 
 ## Experience

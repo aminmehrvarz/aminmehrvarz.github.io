@@ -9,7 +9,7 @@ nav_order: 4
 
 <link rel="stylesheet" href="{{ '/assets/css/academic-layout.css' | relative_url }}">
 
-## Fun acts
+## Fun facts
 
 <ul class="space-y-5">
   <li>
